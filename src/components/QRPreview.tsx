@@ -33,6 +33,8 @@ export default function QRPreview({
   const [scanning, setScanning] = useState(false);
   const [scanResult, setScanResult] = useState("");
   const [modules, setModules] = useState(0);
+  const previewSize =
+    ((200 + Math.round(((settings.size - 128) / 1920) * 98)) * zoom) / 100;
   useEffect(() => {
     if (!ref.current) return;
     ref.current.replaceChildren();
@@ -114,8 +116,7 @@ export default function QRPreview({
         <div
           className={`qr-sheet ${settings.transparent ? "transparent-sheet" : ""}`}
           style={{
-            transform: `scale(${zoom / 100})`,
-            width: `min(100%, ${200 + Math.round(((settings.size - 128) / 1920) * 98)}px)`,
+            width: `min(calc(100% - 24px), ${previewSize}px)`,
             height: "auto",
             aspectRatio: "1",
           }}

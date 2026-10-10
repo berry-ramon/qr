@@ -2,12 +2,12 @@
 QR STUDIO
 ================================================================================
 
-A free, open-source, browser-only QR code generator — built by Brandon Kimathi.
+A free, open-source, browser-only QR code generator - built by Brandon Kimathi.
 
 Encode text, links, Wi-Fi credentials, contacts, phone numbers, email, SMS,
 WhatsApp messages, coordinates, and calendar events into beautiful, permanent
 QR codes. No account, no API, no tracking, no backend. Every QR code encodes
-the actual content directly — never a redirect through a paid or expiring
+the actual content directly - never a redirect through a paid or expiring
 shortener.
 
 Part of brandonkimathi.top
@@ -16,15 +16,15 @@ Part of brandonkimathi.top
 
 ## FEATURES
 
-- Eight input types — text/URL, Wi-Fi, vCard, phone, email, SMS, WhatsApp,
+- Eight input types - text/URL, Wi-Fi, vCard, phone, email, SMS, WhatsApp,
   location, and calendar events
-- Deep customization — colors, gradients, dot shapes, corner styles, quiet
+- Deep customization - colors, gradients, dot shapes, corner styles, quiet
   zone, error correction, and logo embedding
-- Preset library — one-click brand-consistent designs
-- Four export formats — PNG, JPG, SVG, and print-ready PDF
-- 100% client-side — nothing ever leaves the browser
-- Works offline — installs as a PWA, precached on first visit
-- History and presets — persisted to localStorage
+- Preset library - one-click brand-consistent designs
+- Four export formats - PNG, JPG, SVG, and print-ready PDF
+- 100% client-side - nothing ever leaves the browser
+- Works offline - installs as a PWA, precached on first visit
+- History and presets - persisted to localStorage
 
 ---
 
@@ -74,7 +74,7 @@ For a custom domain or root hosting, keep base: '/'.
 ## OFFLINE BEHAVIOR
 
 The production build emits a service worker that precaches every asset in the
-bundle. Visit once while online to install it — afterwards, the app and all
+bundle. Visit once while online to install it - afterwards, the app and all
 export features work without a network connection.
 
 The dev server itself is not an offline deployment.
@@ -91,18 +91,18 @@ Clipboard image export requires a secure context (HTTPS or localhost).
 - localStorage is device- and browser-specific. Export a JSON backup of your
   history if you want to transfer it.
 
-A link encoded in a QR is permanent — but whether its DESTINATION remains
+A link encoded in a QR is permanent - but whether its DESTINATION remains
 available is controlled by whoever owns that destination.
 
 ---
 
 ## EXPORTS
 
-PNG — Web, messaging apps, digital documents
-JPG — Situations where transparency is unwanted
-SVG — Print, signage, anything that needs infinite scaling
-PDF — A4/A5 print pages with proper margins
-Copy — Paste directly into chat or documents
+PNG - Web, messaging apps, digital documents
+JPG - Situations where transparency is unwanted
+SVG - Print, signage, anything that needs infinite scaling
+PDF - A4/A5 print pages with proper margins
+Copy - Paste directly into chat or documents
 
 Use "Test scan" to verify a design before you print or share. It uses the
 browser's BarcodeDetector API when available, falling back to jsQR otherwise.
@@ -119,20 +119,20 @@ Large payloads and low-contrast designs may be harder to scan. For print:
 
 src/
 components/
-QRPreview.tsx — live canvas + test-scan
-InputTabs.tsx — input type selector
-forms/ — one form per input type
-CustomizationPanel.tsx — all style controls
-PresetGrid.tsx — visual preset picker
-HistoryStrip.tsx — recent QR codes
-DownloadPopover.tsx — export options
+QRPreview.tsx - live canvas + test-scan
+InputTabs.tsx - input type selector
+forms/ - one form per input type
+CustomizationPanel.tsx - all style controls
+PresetGrid.tsx - visual preset picker
+HistoryStrip.tsx - recent QR codes
+DownloadPopover.tsx - export options
 ThemeToggle.tsx
 lib/
-qrGenerators.ts — payload builders per input type
-downloadHelpers.ts — PNG / SVG / PDF export logic
-storage.ts — localStorage wrappers
+qrGenerators.ts - payload builders per input type
+downloadHelpers.ts - PNG / SVG / PDF export logic
+storage.ts - localStorage wrappers
 types/
-qr.ts — shared TypeScript types
+qr.ts - shared TypeScript types
 App.tsx
 main.tsx
 
@@ -150,17 +150,17 @@ QR Studio is open source and free for everyone. Contributions are welcome.
 
 Please keep the following principles in mind:
 
-- No backend — everything must run in the browser
-- No paid services — no QR API subscriptions, no expiring shorteners
-- No tracking — no analytics, no telemetry, no third-party scripts
-- Privacy first — user data never leaves the device
-- Accessible — WCAG AA contrast, full keyboard nav, ARIA labels
+- No backend - everything must run in the browser
+- No paid services - no QR API subscriptions, no expiring shorteners
+- No tracking - no analytics, no telemetry, no third-party scripts
+- Privacy first - user data never leaves the device
+- Accessible - WCAG AA contrast, full keyboard nav, ARIA labels
 
 ---
 
 ## LICENSE
 
-MIT — free to use, modify, and distribute.
+MIT - free to use, modify, and distribute.
 
 ---
 
@@ -171,5 +171,5 @@ Built and maintained by Brandon Kimathi (https://brandonkimathi.top).
 Part of the Brandon Kimathi project family.
 
 ================================================================================
-QR STUDIO — permanent QR codes, made in your browser.
+QR STUDIO - permanent QR codes, made in your browser.
 ================================================================================
